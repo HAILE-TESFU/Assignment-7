@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Assignment-1</title>
+        <script>
+            function mothersDay(){
+                let mothersDay=[1905,5,10];
+                let date="";
+                let result="";
+                for(let i=0;i<mothersDay.length;i++){
+                    if((i+1)<mothersDay.length){
+                        date=mothersDay[i]+",";
+                    }
+                    else if((i+1)===mothersDay.length){
+                        date=mothersDay[i]+".";
+                    }
+                   result+=date; 
+                }
+               console.log(result);   
+            }
+            mothersDay();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

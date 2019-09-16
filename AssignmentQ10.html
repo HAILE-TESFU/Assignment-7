@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Assignment-1</title>
+        <script>
+            
+
+            function DayGift(gift){
+               gift=["a partridge in a pearl tree","two turtle doves","three french hence","four calling birds","five golden rings","six geese a laying","seven swans a swimming","eight maids a milk","nine ladies dancing","ten loards a leaping","eleven pipers piping","twelve drummers drumming"];
+                let num=parseInt(document.getElementById("n").value);
+
+                result="";
+
+                for(let i=0;i<num;i++){
+
+                    result+=gift[i]+"---";
+                    }
+                document.getElementById("out").innerHTML=result;
+                  
+            }
+            DayGift();
+                
+        </script>
+    </head>
+    <body>
+        numbers of gifts:<input type="text" id="n">
+        <button type="button" onclick="DayGift()">find the type of gifts</button>
+        <div id="out"></div>
+
+    </body>
+</html>

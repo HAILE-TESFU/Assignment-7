@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Assignment-1</title>
+        <script>
+            function choosenNoun(){
+
+              let verb=["Cat","Dog","Animal","Horse","Camel","Rat","Snake","Elephant","Lion","Donkey","Goat"];
+              let random=verb[Math.random()*verb.length];
+              return random;
+
+            }
+            function chooseVerb(){
+                let verb=["eat","clean","bring","write","read","kiss","wash","greet","teach","kill","sit"];
+              let random=verb[Math.random()*verb.length];
+              return random;
+            }
+            function chooseAdjective(){
+                let verb=["clever","beautifull","dirty","clean","greedy","handsome","crazy","lovely","coward","hero"];
+              let random=verb[Math.random()*verb.length];
+              return random;
+            }
+            function chooseAdverb(){
+                let verb=["quickly","slowly","randomly","heavily"];
+              let random=verb[Math.random()*verb.length];
+              return random;
+
+            }
+            function chooseInteger(){
+               
+              let random=Math.ceil(Math.random()*100);
+              return random;
+
+            }
+            
+
+            function CrazyStore(){
+                let Story;
+               Story="the man comes"+chooseAdverb()+"ing a horse. The horse is"+ chooseAdverb()+" "+chooseAdjective()+" and has no"+choosenNoun()+".The saddle is"+chooseAdjective()+",and the stirrups do not much. His clothing"+"is strange. He wears "+chooseInteger()+"hats and a"+chooseAdjective();
+             document.getElementById("out").innerHTML=Story;
+            }
+            CrazyStore();
+                
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="CrazyStore()">Crazy words</button>
+        <div id="out"></div>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Assignment-1</title>
+        <script>
+            
+
+            function golfScore(hand){
+                hand=[5,2,"king",3,1,"Queen"];
+                let sum=0;
+                let nArray=[];
+        
+                for(let i=0;i<hand.length;i++){
+                    if(hand[i]==="Queen"||hand[i]==="king"||hand[i]==="Jack"){
+                        sum+=10;
+                    }
+                    else sum+=hand[i];
+                }
+
+                
+                console.log(sum);
+            }
+            golfScore();
+                
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

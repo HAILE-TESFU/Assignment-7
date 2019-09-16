@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Assignment-1</title>
+        <script>
+            
+
+            function countEven(list){
+                list=[17,8,9,5,20];
+                
+                let count=0;
+                let evenArray=[];
+                let j=0;
+                for(let i=0;i<list.length;i++){
+                    if(list[i]%2===0){
+                        count++;
+                        evenArray[j]=list[i];
+                        j++
+                    }
+                }
+                console.log(count+" "+evenArray);
+            }
+            countEven();
+                
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
